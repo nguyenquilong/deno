@@ -11,6 +11,10 @@ interface Todo {
 
 let todos: Todo[] = []
 
+todosRouter.get('/', (ctx) => {
+      ctx.response.body = "Hello World from Deno !";
+    })
+
 todosRouter.get('/todos', todoController.get)
 
 todosRouter.post('/todos', todoController.post)

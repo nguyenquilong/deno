@@ -9,14 +9,11 @@ export async function connectDb(){
 
     const client = new MongoClient();
 
-    // await client.connect('mongodb://127.0.0.1:27017')
-    await client.connect(
-      "",
-    );
+    await client.connect('mongodb://127.0.0.1:27017')
 
-     db = client.database('shop')
+    db = client.database('shop')
 
-     console.log('db', db)
+    console.log('db', db)
 }
 
 
