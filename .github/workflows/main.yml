@@ -1,5 +1,5 @@
-step:
-  - name: Deno
+- name: Setup Deno.js environment
+  uses: actions/setup-deno
     env:
-      mongo_username_secrect : ${{ secrets.MONGO_USERNAME}}
-      mongo_password_secrect : ${{ secrets.MONGO_PASSWORD}}
+      USERNAME: ${{ secrets.MONGO_USERNAME }}
+      PASSWORD: ${{ secrets.MONGO_PASSWORD }}
