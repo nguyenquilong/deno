@@ -1,0 +1,5 @@
+step:
+  - name: Deno
+    env:
+      mongo_username_secrect : ${{ secrets.MONGO_USERNAME}}
+      mongo_password_secrect : ${{ secrets.MONGO_PASSWORD}}
