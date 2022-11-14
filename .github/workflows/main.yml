@@ -1,5 +1,7 @@
-- name: Setup Deno.js environment
-  uses: actions/setup-deno
-    env:
+steps:
+  - name: Setup Deno.js environment
+    with: # Set the secret as an input
       USERNAME: ${{ secrets.MONGO_USERNAME }}
       PASSWORD: ${{ secrets.MONGO_PASSWORD }}
+    env: # Or as an environment variable
+      super_secret: ${{ secrets.SuperSecret }}
